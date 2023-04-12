@@ -1,0 +1,61 @@
+// Adds the utterances and intents for the NLP
+// manager.addDocument('en', 'goodbye for now', 'greetings.bye');
+// manager.addDocument('en', 'bye bye take care', 'greetings.bye');
+// manager.addDocument('en', 'okay see you later', 'greetings.bye');
+// manager.addDocument('en', 'bye for now', 'greetings.bye');
+// manager.addDocument('en', 'i must go', 'greetings.bye');
+// manager.addDocument('en', 'hello', 'greetings.hello');
+// manager.addDocument('en', 'hi', 'greetings.hello');
+// manager.addDocument('en', 'howdy', 'greetings.hello');
+
+// // Adds the utterances and intents for the NLP
+// manager.addDocument('en', 'goodbye for now', 'greetings.bye');
+// manager.addDocument('en', 'bye bye take care', 'greetings.bye');
+// manager.addDocument('en', 'okay see you later', 'greetings.bye');
+// manager.addDocument('en', 'bye for now', 'greetings.bye');
+// manager.addDocument('en', 'i must go', 'greetings.bye');
+// manager.addDocument('en', 'hello', 'greetings.hello');
+// manager.addDocument('en', 'hi', 'greetings.hello');
+// manager.addDocument('en', 'howdy', 'greetings.hello');
+// manager.addDocument('en','what\n time','greetings.time');
+// manager.addDocument('en','what\n is day today','greetings.weekname');
+// // Add training data for calculation intent
+// manager.addDocument('en', 'What is {a} plus {b}', 'calculation.addition');
+// manager.addDocument('en', 'What is {a} minus {b}', 'calculation.subtraction');
+// manager.addDocument('en', 'What is {a} times {b}', 'calculation.multiplication');
+// manager.addDocument('en', 'What is {a} divided by {b}', 'calculation.division');
+
+
+
+// // Train also the NLG
+// manager.addAnswer('en', 'greetings.bye', 'Till next time');
+// manager.addAnswer('en', 'greetings.bye', 'see you soon!');
+// manager.addAnswer('en', 'greetings.hello', 'Hey there!');
+// manager.addAnswer('en', 'greetings.hello', 'Greetings!');
+// manager.addAnswer('en', 'greetings.time', NLPMethods.CurrentDateTime());
+// manager.addAnswer('en', 'greetings.weekname', NLPMethods.OnlyWeekname());
+// // Define a custom function to perform the calculation
+// // manager.addAnswer('en', 'calculation.addition', (input)=>NLPMethods.addtion(input));
+// manager.addAnswer('en', 'calculation.addition', (input)=>console.log(input));
+  
+//   manager.addAnswer('en', 'calculation.subtraction', (input)=>NLPMethods.minus(input));
+  
+//   manager.addAnswer('en', 'calculation.multiplication', (input)=>NLPMethods.multiple(input));
+  
+//   manager.addAnswer('en', 'calculation.division', (input)=>NLPMethods.devison(input));
+
+// Add None intent for default response
+// manager.addDocument('en', '.*', 'None');
+// Set default answer for None intent
+
+// Train and save the model.
+// exports.Main = async(Question) => {
+//     console.log(Question)
+//     await manager.train();
+//     manager.save();
+//     const response = await manager.process('en', Question);
+//         return {
+//             data:response.answer,
+//             message:"your answer"
+//         } 
+// };
